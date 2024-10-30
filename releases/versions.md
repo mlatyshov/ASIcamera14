@@ -10,4 +10,4 @@ Place three files in the root folder of MM 1.4:\
     EFW_filter.dll\
     mmgr_dal_AsiCamera_ml_XX.dll - version compatible with your MM\
 \
-Install the camera driver from the website https://www.zwoastro.com/software.\
+Install the camera driver from the website https://www.zwoastro.com/software.
