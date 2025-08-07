@@ -36,6 +36,7 @@ class SequenceThread;
 #include "error_code.h"
 
 extern const char* cameraName;
+extern const char* g_StateDeviceName;
 
 
 

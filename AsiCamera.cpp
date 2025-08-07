@@ -1,6 +1,6 @@
 ﻿///////////////////////////////////////////////////////////////////////////////
 // FILE:          ASICamera.cpp
-// PROJECT:       Micro-Manager
+// PROJECT:       Micro-Manager 1.4.23
 // SUBSYSTEM:     DeviceAdapters
 //-----------------------------------------------------------------------------
 // DESCRIPTION:   A camera implementation that is backed by the file system
@@ -92,7 +92,7 @@ void LogToFile(const char* format, ...) {
 
 inline static void OutputDbgPrint(const char* strOutPutString, ...)
 {
-	return; // лог только для отладки..
+	//return; // лог только для отладки..
 
 	char strBuf[128] = { 0 };
 	sprintf(strBuf, "<%s> ", "MM_ASI");

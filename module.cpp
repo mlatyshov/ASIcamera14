@@ -29,6 +29,7 @@
 MODULE_API void InitializeModuleData()
 {
 	RegisterDevice(cameraName, MM::CameraDevice, "ASI camera ZWO ml");
+	RegisterDevice(g_StateDeviceName, MM::StateDevice, "ZWO EFW filter wheel");
 }
 
 MODULE_API MM::Device* CreateDevice(const char* deviceName)
@@ -42,6 +43,11 @@ MODULE_API MM::Device* CreateDevice(const char* deviceName)
 	{
 		ASICamera* s = new ASICamera();
 		return s;
+	}
+	else if (deviceName_ == g_StateDeviceName)
+	{
+		CMyEFW* efw = new CMyEFW();
+		return efw;
 	}
 	
 	return 0;
