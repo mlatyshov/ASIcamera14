@@ -45,13 +45,11 @@ If you maintain a legacy 1.4 workflow but need support for the latest ASI hardwa
 4. Add **`ASI Camera`** (and **`ASI FilterWheel`** if present), pick the desired device index, finish the wizard.  
 5. Hit **Live** – you’re ready to capture.
 
-### Linux build
+### Build
 
-```bash
-git clone https://github.com/mlatyshov/ASIcamera14.git
-cd ASIcamera14
-make          # requires libasicamera2.so & libEFWFilter.so in your search path
-sudo make install
+Building Micro-Manager device adapters requires the full Micro-Manager source tree and its third-party dependencies.  
+Please follow the official Micro-Manager guide: <https://micro-manager.org/DeviceAdapterTutorial> :contentReference[oaicite:0]{index=0}
+
 
 ### For questions
 
